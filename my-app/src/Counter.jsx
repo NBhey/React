@@ -1,12 +1,15 @@
 import React, { Component } from "react";
 
 class Counter extends Component {
-  constructor() {
-    super();
+  constructor(props) {
+    super(props);
     this.state = { count: 0 };
-  }
+    this.props = props;
 
-  increment = () => {
+    this.increment = this.increment.bind(this)
+  }
+ 
+  increment(){
     if(this.state.count === 10){
         return
     }
@@ -17,6 +20,7 @@ class Counter extends Component {
     if(this.state.count === 0){
         return
     }
+    
     this.setState({ count: this.state.count - 1 });
   }
 
