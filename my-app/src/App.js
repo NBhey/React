@@ -2,6 +2,7 @@ import React from "react";
 import "./index.css";
 import Counter from "./components/Counter";
 import CounterFunc from "./components/CounterFunc";
+import Context from "./components/Context";
 
 function App() {
   const li1 = <li> text1 </li>;
@@ -17,6 +18,8 @@ function App() {
       </ul>
       <Counter />
       <CounterFunc/>
+      <div>-------------------------------</div>
+      <Context/>
     </>
   );
 }
