@@ -1,6 +1,7 @@
 import React from "react";
 import "./index.css";
-import Counter from "./Counter";
+import Counter from "./components/Counter";
+import CounterFunc from "./components/CounterFunc";
 
 function App() {
   const li1 = <li> text1 </li>;
@@ -15,6 +16,7 @@ function App() {
         {li3} <br />
       </ul>
       <Counter />
+      <CounterFunc/>
     </>
   );
 }
