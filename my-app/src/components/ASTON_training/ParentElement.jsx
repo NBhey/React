@@ -8,7 +8,6 @@ export default function ParentElement() {
 
   const increment = useCallback(() => {
     setCount((prevProps) => ++prevProps);
-    // console.log('отработала')
   }, []);
 
   return (
@@ -28,8 +27,6 @@ const SubElement = React.memo(
     );
   },
   (prevProp, nextProp) => {
-    // console.log('prevProp', prevProp)
-    // console.log('nexProp', nexProp)
     return nextProp.count % 2 !== 0;
   }
 );
