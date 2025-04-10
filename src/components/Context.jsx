@@ -23,13 +23,11 @@ const ContextTest = () => {
 
 const ContextTestGetData = () => {
   const data = useContext(text);
-  console.log(data);
   return <span>{data}</span>;
 };
 
 const ContextTestGetData2 = () => {
   const data = useContext(text2);
-  console.log(data);
   return <span>{data}</span>;
 };
 

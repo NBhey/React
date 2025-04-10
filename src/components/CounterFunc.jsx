@@ -5,7 +5,6 @@ const CounterFunc = () => {
 
   const increment = () => {
     setCount((prevcount) => {
-      console.log(prevcount)
      return prevcount + 1; 
       
     });

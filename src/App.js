@@ -5,7 +5,7 @@ import CounterFunc from "./components/CounterFunc";
 import Context from "./components/Context";
 import ParentElement from "./components/ASTON_training/ParentElement";
 import CounterFunc2 from "./components/CounterFunc2";
-
+import ExampleMethodLifeCycle from "./components/ExampleMethodLifeCycle";
 function App() {
   const li1 = <li> text1 </li>;
   const li2 = <li> text2 </li>;
@@ -26,6 +26,8 @@ function App() {
       <ParentElement/>
       <div>-------------------------------</div>
       <CounterFunc2/>
+      <div>-------------------------------</div>
+      <ExampleMethodLifeCycle/>
     </>
   );
 }
