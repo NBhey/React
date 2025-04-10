@@ -4,6 +4,7 @@ import Counter from "./components/Counter";
 import CounterFunc from "./components/CounterFunc";
 import Context from "./components/Context";
 import ParentElement from "./components/ASTON_training/ParentElement";
+import CounterFunc2 from "./components/CounterFunc2";
 
 function App() {
   const li1 = <li> text1 </li>;
@@ -23,6 +24,8 @@ function App() {
       <Context/>
       <div>-------------------------------</div>
       <ParentElement/>
+      <div>-------------------------------</div>
+      <CounterFunc2/>
     </>
   );
 }

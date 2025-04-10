@@ -4,7 +4,11 @@ const CounterFunc = () => {
   const [count, setCount] = useState(0);
 
   const increment = () => {
-    setCount(count + 1);
+    setCount((prevcount) => {
+      console.log(prevcount)
+     return prevcount + 1; 
+      
+    });
   };
 
   const decrement = () => {
